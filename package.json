@@ -2,6 +2,7 @@
   "name": "food-delivery-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://harshiitgohil.github.io/food-delivery-app",
   "dependencies": {
     "@lottiefiles/dotlottie-react": "^0.15.0",
     "@testing-library/dom": "^10.4.0",
@@ -31,7 +32,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "json-server": "json-server --watch db.json --port 3001"
+    "json-server": "json-server --watch db.json --port 3001",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +55,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "json-server": "^1.0.0-beta.3"
   }
 }
